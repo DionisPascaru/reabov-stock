@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: $dark--color;
+}
+
+/** ----- containers ----- **/
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include for-ssm {
+    max-width: 400px;
+  }
+
+  @include for-sm {
+    max-width: 540px;
+  }
+
+  @include for-md {
+    max-width: 720px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include for-lg {
+    max-width: 960px;
+  }
+
+  @include for-xl {
+    max-width: 1026px;
+  }
+}
