@@ -4,14 +4,14 @@ import SoundsView from "@/views/SoundsView";
 
 export default [
     {
-        path: '/fonts',
-        name: 'FontsView',
-        component: FontsView
-    },
-    {
         path: '/',
         name: 'ModelsView',
         component: ModelsView
+    },
+    {
+        path: '/fonts',
+        name: 'FontsView',
+        component: FontsView
     },
     {
         path: '/sounds',
