@@ -31,3 +31,111 @@ body {
     max-width: 1026px;
   }
 }
+
+.page-description {
+  max-width: 500px;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: $white--color;
+
+  .logo {
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 64px;
+    margin: 0;
+    line-height: 0.9;
+
+    @include for-sm {
+      font-size: 84px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    line-height: 0.9;
+  }
+
+  p {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.coming-soon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+
+  span {
+    color: $white--color;
+    font-size: 34px;
+  }
+}
+
+.in-progress {
+  min-height: 328px;
+  margin: 7px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: $white--color;
+    font-weight: 100;
+  }
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 38px;
+  width: fit-content;
+}
+
+.el-tabs--card>.el-tabs__header {
+  border: none;
+
+  .el-tabs__nav-scroll {
+    @include for-lg {
+      display: flex;
+      justify-content: center;
+    }
+
+    .el-tabs__nav {
+      border: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    .el-tabs__item {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      color: #606060;
+
+      &.is-active {
+        border-color: $white--color;
+        color: $white--color;
+      }
+
+      &:hover {
+        color: $white--color;
+        border-color: #606060;
+      }
+    }
+  }
+}
