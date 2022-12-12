@@ -17,7 +17,10 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&display=swap');
+
 #app {
+  font-family: 'Poppins', sans-serif;
   margin-top: 60px;
 }
 </style>
