@@ -7,7 +7,7 @@
 }
 
 .copyright {
-  max-width: 170px;
+  max-width: 100px;
   display: flex;
   flex-direction: column;
 
@@ -17,7 +17,15 @@
 
   span {
     color: $white--color;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  @include for-sm {
+    max-width: 170px;
+
+    span {
+      font-size: 20px;
+    }
   }
 }
 
@@ -26,7 +34,15 @@
   align-items: center;
 
   .social-media-icon {
-    margin-right: 20px;
+    margin-left: 20px;
+
+    a {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   .social-media-text {
@@ -36,7 +52,13 @@
 
     span {
       color: $white--color;
-      font-size: 20px;
+      font-size: 16px;
+    }
+
+    @include for-sm {
+      span {
+        font-size: 20px;
+      }
     }
   }
 }
