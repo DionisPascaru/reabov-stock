@@ -1,9 +1,16 @@
 <template>
-  <h1>Sounds</h1>
+ <div class="container">
+   <in-progress-component></in-progress-component>
+ </div>
 </template>
 
 <script>
+import InProgressComponent from "@/components/common/InProgressComponent.vue";
+
 export default {
-  name: 'SoundsView'
+  name: 'SoundsView',
+  components: {
+    InProgressComponent
+  }
 }
 </script>

@@ -3,20 +3,20 @@
     {
       "id": 1,
       "image": "rings/inx4_gold.png",
-      "url": "#",
-      "category": "other"
+      "url": "https://www.patreon.com/posts/ring-inx4-74544262?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+      "category": ["all", "men", "women"]
     },
     {
       "id": 2,
       "image": "rings/inx5_5.png",
-      "url": "#",
-      "category": "men"
+      "url": "https://www.patreon.com/posts/ring-inx5-73868857?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+      "category": ["all", "men"]
     },
     {
       "id": 3,
       "image": "rings/inx6_gold.png",
-      "url": "#",
-      "category": "other"
+      "url": "https://www.patreon.com/posts/ring-inx6-73778446?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+      "category": ["all", "men"]
     }
   ]
 }

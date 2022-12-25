@@ -9,19 +9,16 @@
     </div>
 
     <el-tabs type="card">
+      <el-tab-pane label="All">
+        <items-component :items="allItems"></items-component>
+      </el-tab-pane>
       <el-tab-pane label="Rings">
-        <items-component :items="rings" :categories="this.rightCategories"></items-component>
+        <items-component :items="rings" :categories="this.ringCategoriesEnum"></items-component>
       </el-tab-pane>
       <el-tab-pane label="Earrings">
-        <items-component :items="earrings"
-                         :categories="[{
-                            id: 'all',
-                            label: 'All'
-                         }]">
-        </items-component>
+        <items-component :items="earrings"></items-component>
       </el-tab-pane>
     </el-tabs>
-    <items-component></items-component>
     <div class="coming-soon">
       <span>That's it... but</span>
       <span>MORE IS COMING</span>
@@ -32,11 +29,11 @@
 
 <script>
 /** External data */
-import { rings }  from '@/data/rings.json';
+import { rings } from '@/data/rings.json';
 import { earrings } from '@/data/earrings.json';
 
 /** Categories enums */
-import rightCategories from '@/enums/rings-category.enum';
+import ringCategoriesEnum from '@/enums/rings-category.enum';
 
 /** Components */
 import LogoComponent from '@/components/common/LogoComponent';
@@ -52,7 +49,12 @@ export default {
     return {
       rings: rings,
       earrings: earrings,
-      rightCategories: rightCategories
+      ringCategoriesEnum: ringCategoriesEnum
+    }
+  },
+  computed: {
+    allItems() {
+      return [...this.rings, ...this.earrings];
     }
   }
 }
