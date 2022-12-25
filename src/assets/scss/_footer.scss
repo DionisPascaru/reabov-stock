@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  border-top: 2px solid $white--color;
+}
+
+.copyright {
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    color: $white--color;
+    font-size: 20px;
+  }
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+
+  .social-media-icon {
+    margin-right: 20px;
+  }
+
+  .social-media-text {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+
+    span {
+      color: $white--color;
+      font-size: 20px;
+    }
+  }
+}
