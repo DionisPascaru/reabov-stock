@@ -1,10 +1,16 @@
 {
   "earrings": [
     {
-      "id": 1,
+      "id": 4,
       "image": "earrings/cer16_gold.png",
-      "url": "#",
-      "category": "all"
+      "url": "https://www.patreon.com/posts/ring-inx4-75762082?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+      "category": ["all"]
+    },
+    {
+      "id": 5,
+      "image": "earrings/cer1.png",
+      "url": "https://www.patreon.com/posts/earrings-cer1-75767947?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+      "category": ["all"]
     }
   ]
 }

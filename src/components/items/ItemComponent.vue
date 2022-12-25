@@ -4,7 +4,7 @@
       <img :src="require(`@/assets/images/${item.image}`)">
     </div>
     <div class="item-btn">
-      <a class="btn" :href="item.url">See item on Patreon</a>
+      <a class="btn" :href="item.url">Download</a>
     </div>
   </div>
 </template>

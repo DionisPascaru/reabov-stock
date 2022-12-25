@@ -1,7 +1,7 @@
 export default [
     {
-      id: 'all',
-      label: 'All'
+        id: 'all',
+        label: 'All'
     },
     {
         id: 'women',
@@ -14,9 +14,5 @@ export default [
     {
         id: 'wedding',
         label: 'Weddings',
-    },
-    {
-        id: 'other',
-        label: 'Other'
     }
 ];
