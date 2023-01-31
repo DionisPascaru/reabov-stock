@@ -4,7 +4,7 @@
       <img :src="require(`@/assets/images/${item.image}`)">
     </div>
     <div class="item-btn">
-      <a class="btn" :href="item.url">Download</a>
+      <a class="btn" :href="item.url" target="_blank">Download</a>
     </div>
   </div>
 </template>

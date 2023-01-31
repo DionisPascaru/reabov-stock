@@ -1,6 +1,6 @@
 import FontsView from "@/views/FontsView";
 import ModelsView from "@/views/ModelsView";
-import SoundsView from "@/views/SoundsView";
+// import SoundsView from "@/views/SoundsView";
 
 export default [
     {
@@ -13,9 +13,10 @@ export default [
         name: 'FontsView',
         component: FontsView
     },
-    {
-        path: '/sounds',
-        name: 'SoundsView',
-        component: SoundsView
-    }
+    // Sounds coming soon
+    // {
+    //     path: '/sounds',
+    //     name: 'SoundsView',
+    //     component: SoundsView
+    // }
 ]

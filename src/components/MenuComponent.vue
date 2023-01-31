@@ -1,14 +1,15 @@
 <template>
   <div>
     <!-- desktop -->
-    <div class="navigation-bar shadow" v-if="!isMobile">
+    <div class="navigation-bar" v-if="!isMobile">
       <el-menu mode="horizontal" :default-active="activeMenuItem"
                class="navigation-bar-menu"
                background-color="transparent"
                :router="true">
         <el-menu-item class="menu-item" index="ModelsView" :route="{ name: 'ModelsView'}">3D MODELS</el-menu-item>
         <el-menu-item class="menu-item" index="FontsView" :route="{ name: 'FontsView'}">FONTS</el-menu-item>
-        <el-menu-item class="menu-item" index="SoundsView" :route="{ name: 'SoundsView'}">SOUND</el-menu-item>
+        <!-- Sounds coming soon -->
+        <!--<el-menu-item class="menu-item" index="SoundsView" :route="{ name: 'SoundsView'}">SOUND</el-menu-item>-->
         <el-menu-item class="menu-item" index="4">ABOUT</el-menu-item>
         <el-menu-item class="menu-item" index="5">CONTACT</el-menu-item>
       </el-menu>
@@ -25,7 +26,8 @@
             :router="true">
           <el-menu-item class="menu-item" index="ModelsView" @click="this.collabseMenu" :route="{ name: 'ModelsView'}">3D MODELS</el-menu-item>
           <el-menu-item class="menu-item" index="FontsView" @click="this.collabseMenu" :route="{ name: 'FontsView'}">FONTS</el-menu-item>
-          <el-menu-item class="menu-item" index="SoundsView" @click="this.collabseMenu" :route="{ name: 'SoundsView'}">SOUND</el-menu-item>
+          <!-- Sounds coming soon -->
+          <!--<el-menu-item class="menu-item" index="SoundsView" @click="this.collabseMenu" :route="{ name: 'SoundsView'}">SOUND</el-menu-item>-->
           <el-menu-item class="menu-item" index="4" @click="this.collabseMenu">ABOUT</el-menu-item>
           <el-menu-item class="menu-item" index="5" @click="this.collabseMenu">CONTACT</el-menu-item>
         </el-menu>
